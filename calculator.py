@@ -5,7 +5,7 @@ def calculator(options_dict):
     if not options_dict:
         pass
     else:
-     high_score = max(options_dict.values())
+        high_score = max(options_dict.values())
 
 # iterate through options based on # of max values and issue a recommendation
     for key in options_dict:
