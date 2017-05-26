@@ -2,7 +2,7 @@ import calculator
 import relevance_scores
 
 # get input from user
-condition = raw_input('Why do you need to see a marcus today?')
+condition = raw_input('Why do you need to see a doctor today?')
 
 # define symptoms and scores per venue
 er = {
