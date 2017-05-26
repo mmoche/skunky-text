@@ -31,8 +31,9 @@ def calculator(options_dict):
         venue = max(options_dict, key=options_dict.get)
         print "Your best option is", venue
         print "Here's how each of our options stack up: "
-        for choice, scored_choice in options_dict:
-            print choice, "marcus", scored_choice
+        for key in options_dict:
+            get_value = options_dict.get(key)
+            print key, get_value
 # generic error if the above statements are ambiguous
     else:
         print "Something's gone wrong"
