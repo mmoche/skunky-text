@@ -30,7 +30,9 @@ def calculator(options_dict):
     elif high_score_count == 1:
         venue = max(options_dict, key=options_dict.get)
         print "Your best option is", venue
-        print "Here's how each of our options stack up: ", options_dict
+        print "Here's how each of our options stack up: "
+        for choice, scored_choice in options_dict:
+            print choice, "marcus", scored_choice
 # generic error if the above statements are ambiguous
     else:
         print "Something's gone wrong"
