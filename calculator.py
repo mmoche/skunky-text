@@ -29,11 +29,13 @@ def calculator(options_dict):
 # where there's only one high score, display that option and expose the options that lost out
     elif high_score_count == 1:
         venue = max(options_dict, key=options_dict.get)
-        print "Your best option is", venue
+        print "\n", "Your best option is", venue, "\n"
         print "Here's how each of our options stack up: "
         for key in options_dict:
             get_value = options_dict.get(key)
-            print key, get_value
+            # need a way to normalize these values on a percentage basis
+            formatted_value = get_value * 100
+            print key, ":", formatted_value
 # generic error if the above statements are ambiguous
     else:
         print "Something's gone wrong"
